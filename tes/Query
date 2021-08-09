@@ -1,0 +1,4 @@
+SELECT tb_mahasiswa.mhs_nama, MAX(tb_mahasiswa_nilai.nilai) 
+FROM tb_mahasiswa, tb_mahasiswa_nilai 
+WHERE tb_mahasiswa.mhs_id = tb_mahasiswa_nilai.mhs_id AND tb_mahasiswa_nilai.mk_id = '2';
+
